@@ -1,0 +1,16 @@
+{
+  "generator-easy-ui5": {
+    "projectname": "tinder4research",
+    "namespace": "flexso.research",
+    "platform": "Application Router @ Cloud Foundry",
+    "viewtype": "XML",
+    "viewname": "MainView",
+    "ui5libs": "Content delivery network (SAPUI5)",
+    "newdir": false,
+    "namespaceURI": "flexso/research",
+    "uimodules": [
+      "uimodule"
+    ],
+    "setupCompleted": true
+  }
+}
