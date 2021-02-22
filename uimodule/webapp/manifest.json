@@ -2,7 +2,7 @@
 	"_version": "1.12.0",
 
 	"sap.app": {
-			"id": "flexso.research.tinder4research",
+		"id": "flexso.research.tinder4research",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"title": "{{appTitle}}",

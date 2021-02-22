@@ -1,11 +1,11 @@
-specVersion: "2.2"
+specVersion: "1.0"
 metadata:
   name: tinder4research_uimodule
 type: application
 resources:
   configuration:
     paths:
-      webapp: uimodule/webapp
+      webapp: webapp
 framework:
   name: SAPUI5
   version: 1.84.0
@@ -28,3 +28,8 @@ server:
         port: 1091
         xsappJson: approuter/xs-app.json
         destinations: []
+    - name: ui5-middleware-simpleproxy
+      mountPath: /research
+      afterMiddleware: compression
+      configuration:
+        baseUri: http://localhost:4004/research

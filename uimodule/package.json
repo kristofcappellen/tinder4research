@@ -1,0 +1,23 @@
+{
+  "name": "tinder4research",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "ui5 build",
+    "serve": "ui5 serve -o index.html",
+    "start": "node node_modules/@sap/approuter/approuter.js"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^1.14.0",
+    "ui5-middleware-simpleproxy": "^0.2.3"
+  },
+  "ui5": {
+    "dependencies": [
+      "ui5-middleware-simpleproxy"
+    ]
+  },
+  "dependencies": {
+    "ui5-middleware-cfdestination": "^0.3.1",
+    "ui5-middleware-livereload": "^0.5.1"
+  }
+}

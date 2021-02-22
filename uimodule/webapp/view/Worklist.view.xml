@@ -44,10 +44,19 @@
 
 				<columns>
 					<Column id="nameColumn">
-						<Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
+						<Text text="projecttype" id="nameColumnTitle"/>
 					</Column>
-					<Column id="unitNumberColumn" hAlign="End">
-						<Text text="{i18n>tableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
+					<Column id="descColumn" hAlign="End" width="50%">
+						<Text text="description" id="descColumnTitle" width="100%"/>
+					</Column>
+					<Column id="startColumn" hAlign="End">
+						<Text text="startdate" id="nameColumnStart"/>
+					</Column>
+					<Column id="endColumn" hAlign="End">
+						<Text text="enddate" id="nameColumnEnd"/>
+					</Column>
+					<Column id="keywordsColumn" hAlign="End">
+						<Text text="keywords" id="nameColumnKeyword"/>
 					</Column>
 				</columns>
 
@@ -57,12 +66,11 @@
 						press=".onPress">
 						<cells>
 							<ObjectIdentifier
-								title="{nameEn}"/>
-							<ObjectNumber
-								number="{
-									path: 'projectFundingCode',
-									formatter: '.formatter.numberUnit'
-								}"/>
+								title="{projectFundingDescriptionEn}"/>
+							<Text text="{nameEn}" />
+							<Text text="{startDate}" />
+							<Text text="{endDate}" />
+							<Text text="{keywords}" />
 						</cells>
 					</ColumnListItem>
 				</items>
